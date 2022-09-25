@@ -1,4 +1,6 @@
 <script lang="ts">
+  import DisplayName from "./DisplayName.svelte";
+
   let count: number = 2;
   let name: string = "";
   const increment = () => {
@@ -10,6 +12,7 @@
   count is {count}
 </button>
 <h1>My name is {name}</h1>
+<DisplayName {name} />
 <input
   value={name}
   on:input={(event) => {
